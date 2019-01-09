@@ -31,7 +31,7 @@ La temática es libre. Tú debes pensar en qué situaciones de la vida real se n
 
 - Este proyecto se debe resolver de manera individual.
 - El proyecto será entregado subiendo tu código a GitHub (commit/push) y la interfaz será desplegada usando GitHub pages. Si no sabes lo que es GitHub, no te preocupes, lo aprenderás durante este proyecto.
-- Tiempo para completarlo: Toma como referencia 2 semanas. Trabaja durante el primer Sprint (una semana) y al  final, trata de fijar un estimado de cuándo lo terminarás.
+- Tiempo para completarlo: 2 semanas divididas en 2 sprints (1 entrega cada viernes)
 
 ## Objetivos de aprendizaje
 
@@ -89,20 +89,22 @@ La interfaz debe permitir al usuario:
 * `src/index.js`: acá debes escuchar eventos del DOM, invocar `cipher.encode()`
   o `cipher.decode()` según sea necesario y actualizar el resultado en la UI.
 * `test/cipher.spec.js`: este archivo contiene algunos tests de ejemplo y acá
-  tendrás que implementar los tests para `cipher.encode()` y `cipher.decode()`.
+  tendrás que implementar los tests(pruebas ) para `cipher.encode()` y `cipher.decode()`.
 
 ## Parte opcional o “Hacker edition”
 
 Las secciones llamadas “Hacker Edition” son opcionales. Si **terminaste** con todo lo anterior y te queda tiempo, intenta completarlas. Así podrás profundizar y/o ejercitar más sobre los objetivos de aprendizaje del proyecto.
 
-La descripción general de este proyecto no menciona qué pasaría con las letras minúsculas y otros caracteres (como espacios, puntuación, ñ, ...). El boilerplate incluye algunos tests (comentados en principio) que puedes usar como punto de partida para implementar el soporte para estos casos.
+La descripción general de este proyecto no menciona qué pasaría con las letras minúsculas y otros caracteres (como espacios, puntuación, ñ, ...). El **boilerplate** incluye algunos tests (comentados al principio del archivo `cipher.spec.js`) que puedes usar como punto de partida para implementar el soporte para estos casos.
 
 Tampoco se menciona qué pasaría si el offset fuera negativo. Como parte del hacker edition te invitamos a explorar también esta caso por tu cuenta.
+
+Por otra parte, complementando la definición de tu producto, puedes plantear un modelo de negocio para tu aplicación, en el que se explique y justifique cómo podrías obtener ingresos a través de ella.
 
 ## Vamos a los detalles. Consideraciones Técnicas
 
 La lógica del proyecto debe estar implementada completamente en JavaScript (ES6).
-En este proyecto NO está permitido usar librerías o frameworks, sólo
+En este proyecto **NO** está permitido usar librerías o frameworks, sólo
 [vanilla JavaScript](https://medium.com/laboratoria-how-to/vanillajs-vs-jquery-31e623bbd46e).
 
 No se debe utilizar la _pseudo-variable_ `this`.
@@ -110,7 +112,7 @@ No se debe utilizar la _pseudo-variable_ `this`.
 Los tests unitarios deben cubrir un mínimo del 70% de _statements_, _functions_
 y _lines_, y un mínimo del 50% de _branches_. El _boilerplate_ ya contiene el
 setup y configuración necesaria para ejecutar los tests (pruebas) así como _code
-coverage_ para ver el nivel de cobertura de los tests usando el comando `npm
+coverage_ para ver el nivel de cobertura de los tests usando el comando `npm run
 test`.
 
 El _boilerplate_ incluye tests (pruebas) de ejemplo como punto de partida.
@@ -145,7 +147,7 @@ El _boilerplate_ incluye tareas que ejecutan [eslint](https://eslint.org/) y
 automáticamente antes de ejecutar las pruebas (tests) cuando usamos el comando
 `npm run test`. En el caso de `JavaScript` estamos usando un archivo de
 configuración de `eslint` que se llama `.eslintrc` que contiene un mínimo de
-información sobre el parser que usar (qué version de JavaScript/ECMAScript), el
+información sobre: qué version de JavaScript/ECMAScript, el
 entorno (browser en este caso) y las [reglas recomendadas (`"eslint:recommended"`)](https://eslint.org/docs/rules/).
 En cuanto a reglas/guías de estilo en sí,
 usaremos las recomendaciones _por defecto_ de tanto `eslint` como `htmlhint`.
@@ -178,10 +180,10 @@ para ver la descripción detallada de cada _habilidad_ y cada _nivel_. Esta es u
 
 | Habilidad |
 |-----------|
-| **CS** |
+| **Computer Science (CS)** |
 | Lógica |
 | Arquitectura |
-| **SCM** |
+| **System Control Managmen(SCM)t** |
 | Git |
 | GitHub |
 | **JavaScript** |
@@ -194,8 +196,8 @@ para ver la descripción detallada de cada _habilidad_ y cada _nivel_. Esta es u
 | Estilo |
 | Semántica |
 | **CSS** |
-| DRY |
-| Responsive |
+| Dont Repeat YourSelf (DRY) |
+
 
 ### Habilidades Técnicas UX
 
@@ -208,8 +210,8 @@ para ver la descripción detallada de cada _habilidad_ y cada _nivel_. Esta es u
 ## Pistas sobre cómo comenzar a trabajar en el proyecto
 
 1. Antes que nada, asegúrate de tener un :pencil: editor de texto en
-   condiciones, algo como [Atom](https://atom.io/) o
-   [Code](https://code.visualstudio.com/).
+   condiciones, algo como [Atom](https://atom.io/), 
+   [Visual Code](https://code.visualstudio.com/), [Sublime Text](https://www.sublimetext.com) o cualquier otro de tu preferencia.
 2. Para ejecutar los comandos a continuación necesitarás una :shell:
    [UNIX Shell](https://github.com/Laboratoria/curricula-js/tree/v2.x/topics/shell),
    que es un programita que interpreta líneas de comando (command-line
@@ -217,9 +219,9 @@ para ver la descripción detallada de cada _habilidad_ y cada _nivel_. Esta es u
    instalado. Si usas un sistema operativo "UNIX-like", como GNU/Linux o MacOS,
    ya tienes una _shell_ (terminal) instalada por defecto (y probablemente `git`
    también). Si usas Windows puedes usar [Git bash](https://git-scm.com/download/win),
-   aunque recomendaría que consideres probar :penguin: GNU/Linux.
+   aunque recomendaría que consideres probar :penguin: GNU/Linux como tu Sistema Operativo.
 3. Haz tu propio :fork_and_knife: [fork](https://help.github.com/articles/fork-a-repo/)
-   del repo de tu cohort, tus _coaches_ te compartirán un _link_ a un repo y te 
+   de [ este repositorio](https://github.com/Laboratoria/cdmx-2019-01-bc-core-am-cipher) de tu cohort, tus _coaches_ te compartirán un _link_ a un repositorio y te 
    darán acceso de lectura en ese repo.
 4. :arrow_down: [Clona](https://help.github.com/articles/cloning-a-repository/)
    tu _fork_ a tu computadora (copia local).
@@ -227,7 +229,7 @@ para ver la descripción detallada de cada _habilidad_ y cada _nivel_. Esta es u
    install`. Esto asume que has instalado [Node.js](https://nodejs.org/) (que
    incluye [npm](https://docs.npmjs.com/)).
 6. Si todo ha ido bien, deberías poder ejecutar las :traffic_light:
-   pruebas unitarias (unit tests) con el comando `npm test`.
+   pruebas unitarias (unit tests) con el comando `npm run test`.
 7. A codear se ha dicho! :rocket:
 
 ## Recursos y temas relacionados
@@ -242,7 +244,7 @@ Diseño de experiencia de usuario (User Experience Design):
 
 - Ideación
 - Prototipado (sketching)
-- Testeo e Iteración
+- Pruebas con usuarios (User Testing) e Iteración
 
 Desarrollo Front-end:
 
@@ -250,7 +252,7 @@ Desarrollo Front-end:
 * Tipos
 * Variables
 * Control de flujo
-* Tests unitarios
+* Pruebas nitarias (Unit test)
 * [Aprende más sobre `charCodeAt()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/charCodeAt)
 * [Aprende más sobre `String.fromCharCode()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/fromCharCode)
 * [Aprende más sobre `ASCII`](http://conceptodefinicion.de/ascii/)
@@ -288,3 +290,5 @@ Esta sección está  para ayudarte a llevar un control de lo que vas completando
 * [ ] Cifra/descifra minúsculas
 * [ ] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
 * [ ] Permite usar un `offset` negativo.
+* [ ] Modelo de negocio.
+
