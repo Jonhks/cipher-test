@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+    background-image: url('../img/unnamed.jpg');
+    background-size: cover;
+    color: white;
+}
+
+.navbar{
+    background-color: black !important;
+}
+
+.fondop{
+    background-color: black ;
+    color: white;
+}
+
+.fondop:focus{
+    background-color: black;
+    color: white;
+}
+
+.textx2{
+    font-size: 2em;
+}
+
+.ocultar{
+    display: none;
+}
