@@ -33,7 +33,7 @@ window.cipher = {
         let ascciCifrado = (ascciCode + 65 - offset) % 26 +65;
         ascciWord += String.fromCharCode(ascciCifrado)
       } else if (ascciCode >= 97 && ascciCode <= 122) {
-        let ascciCifrado = (ascciCode - 97 - offset) % 26 + 97;
+        let ascciCifrado = (ascciCode - 122 - offset) % 26 + 122;
         ascciWord += String.fromCharCode(ascciCifrado); 
       } else if (ascciCode === 32  || ascciCode === 95 || (ascciCode>=33 || ascciCode<=64)){
         ascciWord += String.fromCharCode(ascciCode); 
