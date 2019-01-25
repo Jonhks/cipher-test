@@ -41,6 +41,14 @@ Este proyecto está implementado con:
 - HTML 5
 - CSS 3
 
+# Historias de usuario
+- Yo como usuario, espero poder ingresar un texto.
+- Yo como usuario, espero poder ingresar un numero.
+- Yo como usuario, espero poder ingresar un texto y me ver mi mensaje códificado con el número de saltos que yo ingrese.
+- Yo como usuario espero poder ingresar mayusculas y minusculas y el nuevo mensaje me respete este tipo de letras.
+- Yo como usuario espero poder ingresar espacios, numeros, y caracteres especiales en el texto y me muestre el mensaje con el nuevo cifrado pero estos caracteres me los muestre igual
+
+
 # Expreciones de gratitud
 
 Quiero agradecer a la 🍕   y a la  🍺  por darme la fuerza necesaria para concluir! 
