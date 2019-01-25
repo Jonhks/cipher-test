@@ -4,8 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHcElrBAT7JIqwa32xDFcwBMteCOGKhGIgsvOTypbugddgH3TY" />
   <title>Caesar Cipher</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
     crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" />
@@ -27,8 +29,8 @@
         <form class="text-center">
           <div class="form-group">
             <h2 class="text-center"> Texto a cifrar </h2>
-              <p></p>
-              <input id="input-cifrar" type="text" class="form-control fondop" placeholder="Mensaje" autofocus>
+            <p></p>
+            <input id="input-cifrar" type="text" class="form-control fondop" placeholder="Mensaje" autofocus>
           </div>
           <button id="button-cifrar" type="button" class="btn btn-light">cifrar</button>
         </form>
@@ -37,10 +39,10 @@
         <form class="text-center">
           <div class="form-group">
             <h2 class="text-center"> Texto a descifrar </h2>
-              <p></p>
-              <input id="input-descifrar" type="text" class="form-control fondop" placeholder="Mensaje">
+            <p></p>
+            <input id="input-descifrar" type="text" class="form-control fondop" placeholder="Mensaje">
           </div>
-          <button id="button-descifrar"  type="button" class="btn btn-light ">Descifrar</button>
+          <button id="button-descifrar" type="button" class="btn btn-light ">Descifrar</button>
         </form>
       </div>
     </div>
@@ -50,9 +52,10 @@
     <div class="col-lg-12">
       <div class="col-lg-4 offset-4">
         <div class="form-group text-center">
-            <h4 class="text-center">Offset</h4>
-            <p></p>
-            <input id="input-offset" type="number" class="form-control fondop" placeholder="Offset">
+            <button id="button-cambiar" type="button" class="btn btn-light "><i class="fas fa-exchange-alt">Cambiar</i>  </button>
+          <h4 class="text-center">Offset</h4>
+          <p></p>
+          <input id="input-offset" type="number" class="form-control fondop" placeholder="Offset">
         </div>
       </div>
     </div>
@@ -61,7 +64,7 @@
   <div class="row ">
     <div class="col-lg-8 offset-2">
       <div id="root">
-        <input class="form-control fondop textx2 text-center ocultar" id="output" value="si o no">
+        <input id="output" class="form-control fondop textx2 text-center ocultar">
       </div>
     </div>
   </div>
