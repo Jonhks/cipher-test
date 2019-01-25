@@ -1,3 +1,57 @@
+# Mi ejemplo de README.md 😄
+
+
+# Moto cipher 🏍
+
+En la actualidad nos encontramos con que muchos moteros tienen grupos de whattsapp o facebook para comunicarse entre ellos. Pero que pasa si quieren escribir algo secreto. 
+
+Imaginemos esto: Silvana es miembro de uno de estos grupos, organizan una rodada el proximo fin de semana, comparten por el grupo de redes sociales los detalles de la fecha que salen, la hora, el lugar, donde hnará paradas para comer, etc. 
+
+Silvana está muy emocionada por el viaje y unos días antes de la cita... Pum, su pareja toma su celular(porque tiene su contraseña) y pum.... Su pareja le dice que no le gusta la idea de que Silvana vaya a esa rodada. 
+
+Y así se pierde de esa experiencia de viajar con sus amigos 😢.
+
+Por eso sale la idea de crear una WebApp que les ayude a este y muchos grupos de amigos a tener mensajes secretos entre ellos. 
+
+Para poder hacer uso de  _Moto cipher_  tienes que hacer  
+- [fork](https://help.github.com/articles/fork-a-repo/)
+   de [ este repositorio](https://github.com/Laboratoria/cdmx-2019-01-bc-core-am-cipher) 
+
+- [Clona](https://help.github.com/articles/cloning-a-repository/)
+   tu _fork_ a tu computadora (copia local).
+
+- 📦 Instala las dependencias del proyecto con el comando `npm
+   install`. Esto asume que has instalado [Node.js](https://nodejs.org/) (que
+   incluye [npm](https://docs.npmjs.com/)).
+- Si todo ha ido bien, deberías poder ejecutar las :traffic_light:
+   pruebas unitarias (unit tests) con el comando `npm run test`.
+
+# Prototipo inicial
+
+![Prototipo-imagen](/img/sketch.jpg)
+
+# Prototipo final
+
+![proyecto-imagen](/img/proyecto.png)
+
+# Construido con
+
+Este proyecto está implementado con:
+- JS(ES6) [vanilla JavaScript](https://medium.com/laboratoria-how-to/vanillajs-vs-jquery-31e623bbd46e).
+- HTML 5
+- CSS 3
+
+# Expreciones de gratitud
+
+Quiero agradecer a la 🍕   y a la  🍺  por darme la fuerza necesaria para concluir! 
+
+
+
+
+
+# Fin de mi readme 🏍
+#
+
 # Cifrado César
 
 Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher) es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla.

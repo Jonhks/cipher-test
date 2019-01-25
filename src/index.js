@@ -13,7 +13,6 @@ buttonCifrar.addEventListener('click', () => {
   let str = inputCifrar.value
   let offset = inputOffset.value
   hiddenBox.value = window.cipher.encode(offset, str)
-  // hiddenBox.value = hiddenBox;
 })
 
 buttonDescifrar.addEventListener('click', () => {
@@ -21,7 +20,6 @@ buttonDescifrar.addEventListener('click', () => {
   let str = inputDescifrar.value
   let offset = inputOffset.value
   hiddenBox.value = window.cipher.decode(offset, str)
-  // hiddenBox.value = hiddenBox
 })
 
 
