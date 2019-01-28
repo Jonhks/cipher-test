@@ -5,13 +5,11 @@
 
 En la actualidad nos encontramos con que muchos moteros tienen grupos de whattsapp o facebook para comunicarse entre ellos. Pero que pasa si quieren escribir algo secreto. 
 
-Imaginemos esto: Silvana es miembro de uno de estos grupos, organizan una rodada el proximo fin de semana, comparten por el grupo de redes sociales los detalles de la fecha que salen, la hora, el lugar, donde hnará paradas para comer, etc. 
+Imaginemos esto: Silvana es miembro de uno de estos grupos, organizan una rodada el proximo fin de semana, comparten por el grupo de redes sociales los detalles de la fecha que salen, la hora, el lugar, donde harán paradas para comer, etc. 
 
-Silvana está muy emocionada por el viaje y unos días antes de la cita... Pum, su pareja toma su celular(porque tiene su contraseña) y pum.... Su pareja le dice que no le gusta la idea de que Silvana vaya a esa rodada. 
+Silvana quiere invitar a su amiga Johna quien recientemente perdió su celilar y se comunica con ella desde el chat del trabajo, el cual se encuentra supervisado, y no sería prudente que su conversación sea de dominio de los jefes.
 
-Y así se pierde de esa experiencia de viajar con sus amigos 😢.
-
-Por eso sale la idea de crear una WebApp que les ayude a este y muchos grupos de amigos a tener mensajes secretos entre ellos. 
+Por eso sale la idea de crear una WebApp que les ayude a ellas y muchos grupos de amigos a tener mensajes secretos entre ellos. 
 
 Para poder hacer uso de  _Moto cipher_  tienes que hacer  
 - [fork](https://help.github.com/articles/fork-a-repo/)
@@ -29,7 +27,6 @@ Para poder hacer uso de  _Moto cipher_  tienes que hacer
 # Prototipo inicial
 
 ![Prototipo-imagen](/img/sketch.jpg)
-
 # Prototipo final
 
 ![proyecto-imagen](/img/proyecto.png)
@@ -42,14 +39,17 @@ Este proyecto está implementado con:
 - CSS 3
 
 # Historias de usuario
-- Yo como usuario, espero poder ingresar un texto.
-- Yo como usuario, espero poder ingresar un numero.
-- Yo como usuario, espero poder ingresar un texto y me ver mi mensaje códificado con el número de saltos que yo ingrese.
-- Yo como usuario espero poder ingresar mayusculas y minusculas y el nuevo mensaje me respete este tipo de letras.
-- Yo como usuario espero poder ingresar espacios, numeros, y caracteres especiales en el texto y me muestre el mensaje con el nuevo cifrado pero estos caracteres me los muestre igual
+
+Como <quién> Quiero <qué> Para <objetivo>.
+  Ejemplo: Como Vendedor, quiero registrar los productos y cantidades que me solicita un cliente para crear un pedido de venta.
+  
+- Como usuario quiero encriptar los mensajes de texto hacia mi amiga para proteger su trabajo.
+- Como usuario, quiero ingresar un texto para ver mi mensaje códificado con el número de saltos que yo ingrese.
+- Como usuario quiero ingresar mayusculas y minusculas y el nuevo mensaje me respete este tipo de letras para evitar esfuerzo innecesario.
+- Como usuario quiero ingresar espacios, numeros y caracteres especiales en el texto y que el mensaje con el nuevo cifrado respete los espacios, numeros y caracteres para evitar confusión.
 
 
-# Expreciones de gratitud
+# Expresiones de gratitud
 
 Quiero agradecer a la 🍕   y a la  🍺  por darme la fuerza necesaria para concluir! 
 
@@ -328,29 +328,29 @@ Herramientas:
 Esta sección está  para ayudarte a llevar un control de lo que vas completando.
 
 ### Parte Obligatoria
-* [ ] `README.md` incluye info sobre proceso y decisiones de diseño.
-* [ ] `README.md` explica claramente quiénes son los usuarios y su relación con
+* [x] `README.md` incluye info sobre proceso y decisiones de diseño.
+* [x] `README.md` explica claramente quiénes son los usuarios y su relación con
   el producto.
-* [ ] `README.md` explica claramente cómo el producto soluciona los
+* [x] `README.md` explica claramente cómo el producto soluciona los
   problemas/necesidades de los usuarios.
-* [ ] Usa VanillaJS.
-* [ ] No utiliza `this`.
-* [ ] Implementa `cipher.encode`.
-* [ ] Implementa `cipher.decode`.
-* [ ] Pasa linter con configuración provista.
-* [ ] Pasa pruebas unitarias.
-* [ ] Pruebas unitarias cubren 70% de _statements_, _functions_ y _lines_, y un
+* [x] Usa VanillaJS.
+* [x] No utiliza `this`.
+* [x] Implementa `cipher.encode`.
+* [x] Implementa `cipher.decode`.
+* [x] Pasa linter con configuración provista.
+* [x] Pasa pruebas unitarias.
+* [x] Pruebas unitarias cubren 70% de _statements_, _functions_ y _lines_, y un
   mínimo del 50% de _branches_.
-* [ ] Interfaz permite elegir el `offset` o _desplazamiento_ a usar en el
+* [x] Interfaz permite elegir el `offset` o _desplazamiento_ a usar en el
   cifrado/descifrado.
-* [ ] Interfaz permite escribir un texto para ser cifrado.
-* [ ] Interfaz muestra el resultado del cifrado correctamente.
-* [ ] Interfaz permite escribir un texto para ser descifrado.
-* [ ] Interfaz muestra el resultado del descifrado correctamente.
+* [x] Interfaz permite escribir un texto para ser cifrado.
+* [x] Interfaz muestra el resultado del cifrado correctamente.
+* [x] Interfaz permite escribir un texto para ser descifrado.
+* [x] Interfaz muestra el resultado del descifrado correctamente.
 
 ### Parte Opcional: "Hacker edition"
-* [ ] Cifra/descifra minúsculas
-* [ ] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
+* [x] Cifra/descifra minúsculas
+* [x] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
 * [ ] Permite usar un `offset` negativo.
 * [ ] Modelo de negocio.
 
