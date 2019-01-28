@@ -1,46 +1,54 @@
-let inputCifrar = document.getElementById('input-cifrar')
-let inputDescifrar = document.getElementById('input-descifrar')
-let inputOffset = document.getElementById('input-offset')
-const buttonCifrar = document.getElementById('button-cifrar')
-const buttonDescifrar = document.getElementById('button-descifrar')
-const hiddenBox = document.getElementById('output')
-const changeButton = document.getElementById('button-cambiar')
+const buttonCifrar = document.getElementById('button-cifrar');
+const inputOffset = document.getElementById('input-offset');
+const inputCifrar = document.getElementById('input-cifrar');
+const inputDescifrar = document.getElementById('input-descifrar');
+const buttonDescifrar = document.getElementById('button-descifrar');
+const buttonCambiar = document.getElementById('button-cambiar');
+const output = document.getElementById('output');
 
 
-const encodeFunction = () => {
-  hiddenBox.classList.remove("ocultar")
-  let str = inputCifrar.value
-  let offset = inputOffset.value
-  const encode = window.cipher.encode(offset, str)
-  printText(encode)
+
+
+
+const encodeFunction = () =>{
+    let str = inputCifrar.value;
+    let offset = inputOffset.value;
+    offset = parseInt(offset);
+    const textCipher = window.cipher.encode(offset, str);
+    printFunction(textCipher);
+
 }
 
-const decodeFunction = () => {
-  hiddenBox.classList.remove("ocultar")
-  let str = inputDescifrar.value
-  let offset = inputOffset.value
-  const decode = window.cipher.decode(offset, str)
-  printText(decode)
+const decodeFuntion = () => {
+    let str = inputDescifrar.value;
+    let offset = inputOffset.value;
+    offset = parseInt(offset)
+    const textDescipher = window.cipher.decode(offset, str);
+    printFunction(textDescipher);
+}
+
+const printFunction = (text) => {
+    output.classList.remove('ocultar');
+    output.value = text
+}
+
+const changeInputs = () => {
+    let checkCifrar = inputCifrar.value;
+    let checkDescifrar = inputDescifrar.value;
+    console.log(output.value)
+    if(checkCifrar.length <= 0){
+        inputCifrar.value = output.value;
+        inputDescifrar.value= '';
+        output.value= '';
+    } else if(checkDescifrar.length <= 0){
+        inputDescifrar.value = output.value;
+        inputCifrar.value= '';
+        output.value= '';
+    }
+    // alert('esta vacio')
 }
 
 buttonCifrar.addEventListener('click', encodeFunction)
-buttonDescifrar.addEventListener('click', decodeFunction)
+buttonDescifrar.addEventListener('click', decodeFuntion)
+buttonCambiar.addEventListener('click', changeInputs)
 
-
-const printText = (textCode) => {
-  hiddenBox.value = textCode
-}
-
-changeButton.addEventListener('click', () => {
-  let input1 = inputCifrar.value
-  let input2 = inputDescifrar.value
-  if (input1.length <= 0) {
-    inputCifrar.value = hiddenBox.value
-    inputDescifrar.value = ''
-    hiddenBox.value = ''
-  } else if (input2.length <= 0) {
-    inputDescifrar.value = hiddenBox.value
-    inputCifrar.value = ''
-    hiddenBox.value = ''
-  }
-})
