@@ -7,32 +7,40 @@ const hiddenBox = document.getElementById('output')
 const changeButton = document.getElementById('button-cambiar')
 
 
-
-buttonCifrar.addEventListener('click', () => {
+const encodeFunction = () => {
   hiddenBox.classList.remove("ocultar")
   let str = inputCifrar.value
   let offset = inputOffset.value
-  hiddenBox.value = window.cipher.encode(offset, str)
-})
+  const encode = window.cipher.encode(offset, str)
+  printText(encode)
+}
 
-buttonDescifrar.addEventListener('click', () => {
+const decodeFunction = () => {
   hiddenBox.classList.remove("ocultar")
   let str = inputDescifrar.value
   let offset = inputOffset.value
-  hiddenBox.value = window.cipher.decode(offset, str)
-})
+  const decode = window.cipher.decode(offset, str)
+  printText(decode)
+}
+
+buttonCifrar.addEventListener('click', encodeFunction)
+buttonDescifrar.addEventListener('click', decodeFunction)
 
 
-changeButton.addEventListener('click', () =>{
+const printText = (textCode) => {
+  hiddenBox.value = textCode
+}
+
+changeButton.addEventListener('click', () => {
   let input1 = inputCifrar.value
   let input2 = inputDescifrar.value
-  if(input1.length <= 0 ){
+  if (input1.length <= 0) {
     inputCifrar.value = hiddenBox.value
-    inputDescifrar.value=''
-    hiddenBox.value=''
-  } else if(input2.length <= 0){
+    inputDescifrar.value = ''
+    hiddenBox.value = ''
+  } else if (input2.length <= 0) {
     inputDescifrar.value = hiddenBox.value
-    inputCifrar.value=''
-    hiddenBox.value=''
+    inputCifrar.value = ''
+    hiddenBox.value = ''
   }
 })
